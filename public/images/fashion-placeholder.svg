@@ -1,0 +1,25 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#F3EEE5"/>
+  <rect width="1200" height="1500" fill="url(#paint0_linear_1_2)"/>
+  <circle cx="946" cy="241" r="208" fill="#D9D1C7" fill-opacity="0.5"/>
+  <circle cx="201" cy="1323" r="228" fill="#E7D9C1" fill-opacity="0.48"/>
+  <path d="M506 168H694L764 431L876 1304H324L436 431L506 168Z" fill="#171918"/>
+  <path d="M602 173L700 431L790 1304H410L500 431L602 173Z" fill="#242827"/>
+  <path d="M468 438H732L780 1304H420L468 438Z" fill="#A63B2A" fill-opacity="0.8"/>
+  <path d="M528 340H672L716 462H484L528 340Z" fill="#F7F1EA" fill-opacity="0.9"/>
+  <path d="M338 726C456 688 533 684 600 690C664 695 744 707 866 748L905 944C781 889 699 868 600 868C503 868 413 892 310 954L338 726Z" fill="#F7F1EA" fill-opacity="0.92"/>
+  <path d="M258 1276H943L890 1500H308L258 1276Z" fill="#1B1C1A"/>
+  <path d="M421 1312H779L744 1500H456L421 1312Z" fill="#B38A65" fill-opacity="0.48"/>
+  <path d="M529 119L622 119L782 332L739 387L602 236L468 387L423 332L529 119Z" fill="#F8F4EE"/>
+  <path d="M512 271H688V350H512V271Z" fill="#A63B2A" fill-opacity="0.8"/>
+  <path d="M515 100C546 72 566 66 600 66C635 66 654 75 685 104L746 175H454L515 100Z" fill="#DDD2CA" fill-opacity="0.92"/>
+  <path d="M470 550C519 518 560 505 600 505C640 505 685 518 732 550" stroke="#F4EAE1" stroke-width="18" stroke-linecap="round"/>
+  <text x="600" y="1176" text-anchor="middle" fill="#1A1A1A" font-family="Georgia, serif" font-size="88" font-weight="600" letter-spacing="8">FUSTANA</text>
+  <text x="600" y="1270" text-anchor="middle" fill="#4D4B48" font-family="Arial, sans-serif" font-size="30" letter-spacing="10">PREMIUM EDIT</text>
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="600" y1="0" x2="600" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F2EA"/>
+      <stop offset="1" stop-color="#E9E2D8"/>
+    </linearGradient>
+  </defs>
+</svg>
