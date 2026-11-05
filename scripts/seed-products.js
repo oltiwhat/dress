@@ -100,6 +100,19 @@ const products = [
 ];
 
 async function main() {
+  await Promise.all([
+    prisma.category.upsert({
+      where: { slug: 'evening-wear' },
+      update: { name: 'Evening Wear' },
+      create: { name: 'Evening Wear', slug: 'evening-wear' },
+    }),
+    prisma.category.upsert({
+      where: { slug: 'wedding-dress' },
+      update: { name: 'Wedding Dress' },
+      create: { name: 'Wedding Dress', slug: 'wedding-dress' },
+    }),
+  ]);
+
   for (const product of products) {
     const existing = await prisma.product.upsert({
       where: { slug: product.slug },
