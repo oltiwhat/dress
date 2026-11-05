@@ -10,7 +10,8 @@ import { useToast } from '@/hooks/useToast';
 import { formatPrice, getSafeImageUrl } from '@/lib/utils';
 import { CheckoutForm } from './CheckoutForm';
 
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
+const stripePublishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+const stripePromise = stripePublishableKey ? loadStripe(stripePublishableKey) : null;
 
 export default function CheckoutPage() {
   return (
@@ -42,6 +43,19 @@ function StripeCheckout() {
           <a href="/shop" className="btn btn-primary mt-4 inline-block">Continue Shopping</a>
         </div>
       </div>
+    );
+  }
+
+  if (!stripePromise) {
+    return (
+      <main className="container flex min-h-[60vh] items-center justify-center py-16">
+        <section className="max-w-lg text-center" role="alert">
+          <p className="section-eyebrow">Payments unavailable</p>
+          <h1 className="font-serif text-3xl font-medium">Checkout is temporarily unavailable.</h1>
+          <p className="mt-3 text-gray-600">Online payments are not configured right now. Please try again later.</p>
+          <a href="/shop" className="btn btn-primary mt-6">Return to Shop</a>
+        </section>
+      </main>
     );
   }
 

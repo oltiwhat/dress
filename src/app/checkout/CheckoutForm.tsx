@@ -83,6 +83,7 @@ export function CheckoutForm({ onSubmit, isProcessing, total }: CheckoutFormProp
               <option value="DE">Germany</option>
               <option value="FR">France</option>
               <option value="IT">Italy</option>
+              <option value="XK">Kosovo</option>
               <option value="ES">Spain</option>
             </select>
             {errors.country && <p className="error-message">{errors.country}</p>}
